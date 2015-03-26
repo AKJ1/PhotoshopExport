@@ -20,7 +20,7 @@ function savePNG(doc, qty) {
     png_Opt.embedColorProfile = true;  
     png_Opt.transparency = true;
     png_Opt.quality = qty;   
-    doc.saveAs( saveName, saveOptions, true );  
+    doc.saveAs( saveName, png_Opt, true );  
 }  
 
 

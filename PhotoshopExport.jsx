@@ -19,7 +19,7 @@ function savePNG(doc, qty) {
 	var png_Opt					= new PNGSaveOptions();  
     png_Opt.embedColorProfile = true;  
     png_Opt.transparency = true;
-    png_Opt.quality = qtu;   
+    png_Opt.quality = qty;   
     doc.saveAs( saveName, saveOptions, true );  
 }  
 

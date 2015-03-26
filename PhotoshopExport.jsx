@@ -12,7 +12,7 @@ function savePNG(doc, qty) {
     var currentAS               = autoSaveFolder.getFiles( docName + '*' + 'png' );
     var suffix                  = currentAS.length + 1;
     
-    var saveName 				= new File(decodeURI(doc.path)+'/'+docName[1]+suffix+'.jpg');
+    var saveName              = new  File( autoSavePath + '/' + docName + '_rev_' + suffix + 'png' );
 	// docName 	              	= docName.substring( 0, docName.indexOf('.') );
 	docName = docName.match(/(.*)(\.[^\.]+)/) ? docName = docName.match(/(.*)(\.[^\.]+)/):docName = [docName, docName];
 
